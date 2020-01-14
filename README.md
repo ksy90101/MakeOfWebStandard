@@ -80,4 +80,36 @@
 
 - 코드 간략화
     - 최대한 코드가 중복되는 것들은 하나의 클래스를 생성해서 모아두는 것이 좋음
-    
+
+## 7. layout07
+
+- 주석을 적어주면서, 남이 코드를 봤을때 최대한 이해를 도와야 하며, 선택자명을 잘 짓는 것이 중요함.
+
+## 8. layout08
+- 이제부터 웹 서버에 올려서 예제를 공유할 예정
+
+- 웹서버를 이용하기 위해서는 파일질라가 필요함
+
+- [파일질라](https://filezilla-project.org/)
+
+- Intelli J 웹서버 접근(Remote Host) -> 사용법 차후 포스팅
+
+````
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="rutgo">
+    <meta name="description" content="웹 표준을 준수한 사이트 예제입니다.">
+    <meta name="keywords" content="럿고, 웹표준, 웹접근성, 사이트 만들기">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+````
+
+- 크롤러(검색 로봇)
+
+- <link> - CSS 외부파일 연동
