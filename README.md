@@ -279,3 +279,37 @@
     - 유효성 검사하는 프로그램
 
 ## 14. 전체 메뉴 수정
+
+- [ol 태그](https://webzz.tistory.com/306)
+    - Order List로써 순서가 있는 목록형 태그
+    
+- [li 태그](https://webzz.tistory.com/292)
+    - List Item으로 목록의 항목을 나타냄
+    
+- [list-style 속성](https://webzz.tistory.com/486)
+    - 목록 스타일 속성을 설정
+    - type(유형), position(위치), image(이미지)를 설정
+    
+- ['>' 선택자](https://webzz.tistory.com/663)
+    - 자식선택자로, 첫번째 자식만 선택함
+    
+- [' ' 선택자](https://webzz.tistory.com/663)
+    - 하위 선택자로 모든 자식을 선택함
+
+- float: left로 인한 영역깨짐(height : 0) 방지법
+    1. 깨지는 영역에 똑같이 float: left를 사용
+        - 모든 박스에 float: left를 사용하게 되기 때문에 권장하지 않습니다.
+    2. float의 성징을 차단하는 clear: both 사용
+        - 박스 구조가 복잡해졌을때 어떤 영역이 깨졌는지 찾기 어렵기 때문에 사용하는데 권장하지 않습니다.
+    3. float을 사용한 상위박스한테 overflow: hidden을 사용
+        - 100%좋지는 않지만, 현재는 우리 기준으로 제일 많이 사용함
+        - 내가 지정한 영역외에는 안보이게 된다보니, height: 0이 안됨
+        - 그러나, 2단메뉴를 사용할때는 사용을 하지 못함
+    4. clearfix를 사용
+        -[clearfix란?](https://takeuu.tistory.com/60)
+        - 가장 좋은 방법!
+
+- [:last-child 선택](https://webzz.tistory.com/666)
+    - ie9부터 사용 가능
+    - 마지막 자신만 선택
+    
