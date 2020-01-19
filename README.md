@@ -216,4 +216,66 @@
     
 - [font-weight: normal](https://webzz.tistory.com/460)
     - 폰트 두깨를 설정하는데, 기본값으로 설정한다는 의미
+
+## 13. 헤더 아이콘 수정
+- 이미지를 표현하는 방법
+    1. img 태그로 표현(의미가 있을 때)
+        - alt 속성으로 대체 문자를 표현할 수 있음 따라서 의미가 있을때 사용함
+        - [img 태그 자세히 보기](https://webzz.tistory.com/285)
+    2. background 속성으로 표현(의미가 없을 때)
+        - [background-image 속성 자세히 보기](https://webzz.tistory.com/380)
+    3. 최근 웹사이트는 background 속성을 이용하여 이미지를 표현하며, 가상으로 대체 문자를 만들어줌(IR 효과)
+    왜냐하면 웹 접근성을 만족시켜야 하기 때문에 인데, 왜 background 속성을 사용하는 이유는 이미지 스프라이트를 사용하여 서버 요청을 최소화 하기 위해서입니다.
+        - [IR 효과](http://ui.daum.net/convention/css/css_ir)
+        - [이미지 스프라이트](http://tcpschool.com/css/css_basic_imageSprites)
+
+- IR효과
+
+````
+/* 의미있는 이미지의 대체 텍스트를 제공하는 경우*/
+. ir_pm {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때 */
+. ir_wa {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공 할 때 */
+.ir_su {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+````
+
+- [z-index](https://webzz.tistory.com/563)
+    - 요소의 위치가 겹칠 경우 순서를 정의
+    - 음수도 설정 가능
+    - 99999까지만 설정 가능
+    - z-index를 적용하지 않은 경우 CSS 우선순위에 따라 나중에 설정한 속성이 위로 올라옴
     
+- [text-indent](https://webzz.tistory.com/540)
+    - 문단 들여쓰기 속성 설정
+    
+- [overflow](https://webzz.tistory.com/514)
+    - 지정한 영역에 요소들이 벗어났을 때 속성을 설정
+    - hidden값은 값을 안보이게 하는 것
+
+- [Web Developer 크롬 확장 프로그램](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?utm_source=chrome-ntp-icon)
+    - 유효성 검사하는 프로그램
+
+## 14. 전체 메뉴 수정
