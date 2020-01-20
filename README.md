@@ -312,4 +312,19 @@
 - [:last-child 선택](https://webzz.tistory.com/666)
     - ie9부터 사용 가능
     - 마지막 자신만 선택
+
+## 15. 전체 타이틀
+
+- position : absolute;
+    - 항상 기준점이 필요하기 때문에, 기준점이 되는 곳에 position: relative를 적어줘야함.
+
+- [letter-spacing](https://webzz.tistory.com/484)
+    - 글자 사이의 간격을 설정
+
+## 16. 전체 배너
+
+- [:nth-child() 선택자](https://webzz.tistory.com/666)
+    - ie9부터 적용
+    - 자식을 직접 선택할 수 있는 선택자
     
+## 17. 컨텐츠 레이아웃
