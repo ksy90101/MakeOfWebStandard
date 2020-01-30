@@ -344,5 +344,34 @@ white-space: nowrap;
 
 ## 20. 게시판 3
 
-## 21. 마우스오버 효과1
+## 21. 마우스오버 효과 1
 
+- [em 태그](https://webzz.tistory.com/267)
+    - 텍스트를 강조하는 데 사용
+    - 시각적으로 기울임꼴로 표시가 됩니다.
+
+- [strong 태그](https://webzz.tistory.com/329)
+    - 텍스트의 중요성, 심각성, 긴급성의 의미를 가지고 있으며 텍스트는 시각적으로 굵게 표현
+
+- [visibility 속성](https://webzz.tistory.com/557)
+    - 요소를 보이지 않게 정의함
+    - visible(기본값) / hidden(보이지 않게 함(영역은 유지)), collapse(테이블 요소를 보이지 않게 하며 영역 제거)
+    
+## 22. 마우스오버 효과 2
+
+- 미리 만들어놓은 구성요소를 재사용 하는 것이 좋음. 그러나 margin이나 padding같은 경우를 다르게 줘야 할 경우가 있을 수 있음.
+그럴때는 reset.css에 미리 클래스를 만들어 놓는 것이 줗음 그러면 그 클래스만 넣으면 margin이 적용되기 때문이다.
+
+- [!important]
+
+## 23. 탭메뉴
+
+- 콘텐츠 요소를 보이지 않게 하는 방법
+    - display:none -- display: block ==> 영역 제거
+    - visibility: hidden -- visibility: visible ==> 영역은 유지
+    - opacity: 0 -- opacity: 1 (영역 유지)
+    - width:0; height:0; overflow:hidden (영역 제어 가능)
+
+- border가 위아래로 2개씩 있다면, 한줄로 보이게 하는 방법 중 하나는 위치에 맞게 margin을 -1px을 주는 방법이다.
+
+## 24. 게시판 4
