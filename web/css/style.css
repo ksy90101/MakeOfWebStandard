@@ -23,13 +23,8 @@
     height: 325px;
     background: url(../img/header_bg.jpg) repeat-x center top;
 }
-
 #contents { }
-
-#footer {
-    height: 200px;
-    background-color: #333;
-}
+#footer { border-top: 1px solid #eee; }
 
 /* 컨텐츠 레이아웃 */
 #cont_nav {
@@ -157,9 +152,7 @@
     margin-bottom: 4px
 }
 
-.nav > div ol {
-    overflow: hidden;
-}
+.nav > div ol { overflow: hidden; }
 
 .nav > div ol li {
     float: left;
@@ -226,13 +219,9 @@
     background-position: -193px 0;
 }
 
-.ban .a.next:hover {
-    background-position: -193px -43px;
-}
+.ban .a.next:hover { background-position: -193px -43px; }
 
-.ban ul {
-    overflow: hidden;
-}
+.ban ul { overflow: hidden; }
 
 .ban ul li {
     float: left;
@@ -337,7 +326,7 @@
 .cont .col3 .ico_img { background-position: 0 -360px; }
 .cont .col4 .ico_img { background-position: 0 -420px; }
 .cont .col5 .ico_img { background-position: 0 -480px; }
-.cont .col6 .ico_img { background-position: -540px; }
+.cont .col6 .ico_img { background-position: 0 -540px; }
 
 .cont .col1 .ico_img:hover { background-position: -60px -240px; }
 .cont .col2 .ico_img:hover { background-position: -60px -300px; }
@@ -417,3 +406,55 @@
 .notice4 ul li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .notice4 ul li span {float: right; width: 30%; text-align: right;}
 .notice4 a.more {position: absolute; right: 9px; top: 9px;}
+
+/* 갤러리 */
+.gallery {position: relative; border: 1px solid #ccc; height: 254px; overflow: hidden}
+.gallery h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; font-weight: bold; }
+.gallery .gallery_btn {position: absolute; right: 5px; top: 7px;}
+.gallery .gallery_btn ul {overflow: hidden;}
+.gallery .gallery_btn ul li {float: left; margin: 1px 2px;}
+.gallery .gallery_btn ul li a {display: block; width: 23px; height: 23px; background: url(../img/icon.png) no-repeat;}
+.gallery .gallery_btn ul li.gb_icon1 a {background-position: -150px -120px;}
+.gallery .gallery_btn ul li.gb_icon2 a {background-position: -150px -143px;}
+.gallery .gallery_btn ul li.gb_icon3 a {background-position: -150px -166px;}
+.gallery .gallery_btn ul li.gb_icon4 a {background-position: -150px -189px;}
+.gallery .gallery_btn ul li.gb_icon1 a:hover {background-position: -173px -120px;}
+.gallery .gallery_btn ul li.gb_icon2 a:hover {background-position: -173px -143px;}
+.gallery .gallery_btn ul li.gb_icon3 a:hover {background-position: -173px -166px;}
+.gallery .gallery_btn ul li.gb_icon4 a:hover {background-position: -173px -189px;}
+.gallery .gallery_btn ul li a span {}
+.gallery .gallery_img {}
+.gallery .gallery_img img {width: 100%;}
+
+/* 로그인 */
+#login-wrap {margin-bottom: 15px; background: #f2f4f5; padding: 15px;}
+#login_form .login_header {overflow: hidden; font-size: 12px; height: 30px;}
+#login_form .login_header .lh_check {float: left; padding-right: 15px;}
+#login_form .login_header .lh_check .input_check {vertical-align: -2px;}
+#login_form .login_header .lh_ip {float: left;}
+#login_form .login_header .lh_ip em {color: #0093bd; text-decoration: underline;}
+#login_form .login_content {position: relative;}
+#login_form .login_content .lc_btn {position: absolute; right: 0; top: 0; width: 62px; height: 47px; background: #fff;
+    border: 1px solid #bebebe;}
+#login_form .login_content .input_text {width: 182px; height: 16px; padding: 2px 5px; border: 1px solid #bebebe; margin-bottom: 3px; background: #fff;}
+#login_form .login_footer {margin-top: 5px;}
+#login_form .login_footer li {display: inline;}
+#login_form .login_footer li a {font-size: 12px;}
+
+/* 팝업 */
+.popup { margin-top: 15px; }
+.popup h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+.popup ul {overflow: hidden;}
+.popup ul li {float: left; width: 93px; margin-right: 5px;}
+.popup ul li.last { margin-right: 0;}
+.popup ul li img {width: 100%;}
+.popup ul li img {width: 100%;}
+
+/* 푸터 */
+.footer { padding: 25px 0; text-align: center; }
+.footer ul {margin-bottom: 20px;}
+.footer ul li {position: relative; display: inline; padding: 0 7px 0 10px; }
+.footer li:before {content: ''; width: 1px; height: 12px; background: #ccc; position: absolute;
+    left: 0; top: 2px;}
+.footer li:first-child:before {width: 0; height: 0;}
+.footer .w3c {margin-top: 15px;}

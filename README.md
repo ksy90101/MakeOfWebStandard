@@ -375,3 +375,26 @@ white-space: nowrap;
 - border가 위아래로 2개씩 있다면, 한줄로 보이게 하는 방법 중 하나는 위치에 맞게 margin을 -1px을 주는 방법이다.
 
 ## 24. 게시판 4
+
+## 25. 갤러리
+
+## 26. 로그인
+- [form 태그]
+
+- [fieldset 태그]
+
+- [legend 태그]
+
+- [input 태그]
+
+- [label 태그]
+    -input태그와 연결
+    
+- [vritical-align 속성]
+
+## 27. 팝업
+
+## 28. 푸터 & W3C 수정
+[address 태그]
+
+[before 가상 선택자]
