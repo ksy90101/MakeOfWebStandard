@@ -398,3 +398,60 @@ white-space: nowrap;
 [address 태그]
 
 [before 가상 선택자]
+
+## 29. 전체 메뉴 스크립트
+jQuery 이용
+(CDN 방법으로)
+- script 태그 사용시 type을 지정해줘도 되는데, HTML5부터는 생략이 가능함
+- intelli J jQuery 사용
+(https://stackoverrun.com/ko/q/10211240)
+
+````
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    // 버튼을 클릭하면 전체 메뉴를 보이게 하세요.
+    $(".tit .btn").click(function (e) {
+        e.preventDefault();
+        // #cont_nav {display: block;}
+        // $("#cont_nav").css("display", "block");
+        // $("cont_nav").show();
+        // $("#cont_nav").fadeIn();
+        // $("#cont_nav").slideDown();
+        // $("#cont_nav").toggle();
+        $("#cont_nav").slideToggle(200);
+        $(this).toggleClass("on");
+    });
+</script>
+````
+
+## 30. 배너 스크립트
+
+- slick
+(https://kenwheeler.github.io/slick/)
+
+- html 마크업 셋팅 -> css 연동 -> jQuery 연동 -> jquery 호출
+
+
+````
+    $('.ban').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true
+    });
+````
+
+````
+.ban .slick-prev:hover{    background-position: -193px 0;}
+.ban .slick-next:hover{ background-position: -193px -43px; }
+.ban img {border: 4px solid #dcdcdc;}
+.ban img:hover {border-color: #98bcdc;}
+.ban .slick-slide {margin: 10px;}
+.ban .slick-dots {position: absolute; bottom: 15px; display: block; width: 100%; text-align: center;}
+.ban .slick-dots li {display: inline-block; width: 15px; height: 15px; margin: 5px;}
+.ban .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 15px; height: 15px;
+cursor: pointer; background: #5dbfeb; border-radius: 50%}
+.ban .slick-dots li.slick-active button {background: #2b91c8;}
+````
