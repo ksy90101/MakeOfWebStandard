@@ -1,6 +1,6 @@
 // 라이트 박스
 $(".lightgallery").lightGallery({
-    thembnail: true,
+    thumbnail: true,
     autoplay: true,
     pause: 3000,
     progressBar: true
@@ -72,7 +72,7 @@ $(".pause").click(function () {
 });
 
 $(".prev").click(function () {
-    $(".gallery_img").slick("slickNext");
+    $(".gallery_img").slick("slickPrev");
 });
 
 $(".next").click(function () {
@@ -82,12 +82,12 @@ $(".next").click(function () {
 // 버튼을 클릭하면 전체 메뉴를 보이게 하세요.
 $(".tit .btn").click(function (e) {
     e.preventDefault();
-    // #cont_nav {display: block;}
-    // $("#cont_nav").css("display", "block");
-    // $("cont_nav").show();
-    // $("#cont_nav").fadeIn();
-    // $("#cont_nav").slideDown();
-    // $("#cont_nav").toggle();
+// #cont_nav {display: block;}
+// $("#cont_nav").css("display", "block");
+// $("cont_nav").show();
+// $("#cont_nav").fadeIn();
+// $("#cont_nav").slideDown();
+// $("#cont_nav").toggle();
     $("#cont_nav").slideToggle(200);
     $(this).toggleClass("on");
 });
