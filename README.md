@@ -444,7 +444,7 @@ jQuery 이용
 ````
 
 ````
-.ban .slick-prev:hover{    background-position: -193px 0;}
+.ban .slick-prev:hover{ background-position: -193px 0;}
 .ban .slick-next:hover{ background-position: -193px -43px; }
 .ban img {border: 4px solid #dcdcdc;}
 .ban img:hover {border-color: #98bcdc;}
@@ -455,3 +455,88 @@ jQuery 이용
 cursor: pointer; background: #5dbfeb; border-radius: 50%}
 .ban .slick-dots li.slick-active button {background: #2b91c8;}
 ````
+
+## 31. 탭메뉴 스크립트
+- jQuery 변수
+- jQuery chain 기능
+- focus()준 이유는 웹표준을 지키기위해
+tab을 클릭했을때 공지사항1 버튼 -> 공지사항 1,2,3 -> 공지사항 2 -> 공지사항2 1,2,3...
+````
+    // 탭메뉴
+    var $tab_list = $('.tab_menu');
+
+    $tab_list.find('ul ul').hide();
+    $tab_list.find('li.active > ul').show();
+
+    function tabMenu(e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.next("ul").show().parent("li").addClass("active").siblings("li").removeClass("active").find(">ul").hide();
+    }
+
+    $tab_list.find("ul>li>a").click(tabMenu).focus(tabMenu);
+````
+
+## 갤러리 스크립트
+- 슬릭 버튼 연결
+````
+    // 갤러리
+    $(".gallery_img").slick({
+        fade: true,
+        pauseOnHover: true,
+        arrows: false,
+        infinite: true,
+        autoplay: 3000,
+        speed: 300,
+        slidesToShow: 1
+    });
+
+    $(".play").click(function(){
+        $(".gallery_img").slick("slickPlay");
+    });
+
+    $(".pause").click(function () {
+        $(".gallery_img").slick("slickPause");
+    });
+
+    $(".prev").click(function () {
+        $(".gallery_img").slick("slickNext");
+    });
+
+    $(".next").click(function (){
+        $(".gallery_img").slick("slickNext");
+    });
+````
+
+## 33. 레이어 팝업
+box-shadow
+img는 inline 구조여서 패딩값 같은 게 안된다.
+````
+    // 레이어 팝업
+    $(".layer").click(function (e) {
+        e.preventDefault();
+        // $("#layer").css("display", "block");
+        // $("#layer").show();
+        // $("#layer").fadeIn();
+        $("#layer").slideDown();
+    });
+
+    $("#layer .close").click(function (e) {
+        e.preventDefault();
+        $("#layer").slideUp();
+    });
+````
+
+## 34. 윈도우 팝업
+````
+    // 윈도우 팝업
+    $(".window").click(function (e) {
+        e.preventDefault();
+        // window.open("파일명", "팝업이름", "옵션설정");
+        // 옵션 : left, top, width, height, status, toolbar, location, menubar, scrollbars, fullscreen
+        window.open("sample_popup.html","popup01","width=800, height=590, left=50, top=50, scrollbars=0, toolbar=0, menubar=0")
+    });
+````
+## 35. 라이트 박스
+
+
